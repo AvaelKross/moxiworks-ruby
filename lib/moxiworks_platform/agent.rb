@@ -21,7 +21,6 @@ module MoxiworksPlatform
     # @return [String] the id of the agent used by the company of the agent
     attr_accessor :client_agent_id
 
-
     # @!attribute string agent_id
     #
     # @return [String] the UUID of the Agent
@@ -37,66 +36,55 @@ module MoxiworksPlatform
     # @return [String] the office ID of the agent
     attr_accessor :office_id
 
-
     # @!attribute string company_id
     #
     # @return [String] the company id of the agent
     attr_accessor :company_id
-
 
     # @!attribute string alt_phone_number
     #
     # @return [String] alternate phone number for agent
     attr_accessor :alt_phone_number
 
-
     # @!attribute string lead_routing_email_address
     #
     # @return [String] the lead routing email address of the agent
     attr_accessor :lead_routing_email_address
-
 
     # @!attribute string title
     #
     # @return [String] the title of the Agent
     attr_accessor :title
 
-
     # @!attribute string uuid
     #
     # @return [String] the UUID of the Agent
     attr_accessor :uuid
-
 
     # @!attribute string twitter
     #
     # @return [String] the twitter handle of the agent
     attr_accessor :twitter
 
-
     # @!attribute string gci_goal
     #
     # @return [String] the GCI goal of the Agent
     attr_accessor :gci_goal
-
 
     # @!attribute string buyer_commission_rate
     #
     # @return [String] the buyer commission rate of the Agent
     attr_accessor :buyer_commission_rate
 
-
     # @!attribute string seller_commission_rate
     #
     # @return [String] the seller commission rate of the Agent
     attr_accessor :seller_commission_rate
 
-
     # @!attribute string alternate_offices
     #
     # @return [Array] any alternate offices the agent is associated with
     attr_accessor :alternate_offices
-
 
     # @!attribute string the id office used by the company of the agent
     #
@@ -128,6 +116,10 @@ module MoxiworksPlatform
     # @return [String] This is the standard abbreviation of the primary MLS utilized by the agent
     attr_accessor :mls_abbreviation
 
+    # @!attribute office_name
+    #
+    # @return [String] the agent's office name
+    attr_accessor :office_name
 
     # @!attribute office_address_street
     #
@@ -262,37 +254,40 @@ module MoxiworksPlatform
     # @return [Array] available MLSs for this agent
     attr_accessor :available_mls
 
-
     # @!attribute altnernate_offices
     #
     # @return [Array] alternate offices for this agent
     attr_accessor :altnernate_offices
-
 
     # @!attribute gci_goal
     #
     # @return [Integer] GCI Goal for this agent
     attr_accessor :gci_goal
 
-
     # @!attribute region
     #
     # @return [String] region for this agent
     attr_accessor :region
-
 
     # @!attribute buyer_commission_rate
     #
     # @return [Hash] buyer commission rate for this agent
     attr_accessor :buyer_commission_rate
 
-
     # @!attribute seller_commission_rate
     #
     # @return [Hash]  seller commission rate for this agent
     attr_accessor :seller_commission_rate
 
+    # @!attribute created_timestamp
+    #
+    # @return [Integer] Unix timestamp of the time this agent was created
+    attr_accessor :created_timestamp
 
+    # @!attribute last_updated_timestamp
+    #
+    # @return [Integer] Unix timestamp of the time this agent was updated
+    attr_accessor :last_updated_timestamp
 
     # Find an Agent on the  Moxi Works Platform
     # @param [Hash] opts named parameter Hash
